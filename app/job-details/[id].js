@@ -25,7 +25,7 @@ const tabs = ["About", "Qualifications", "Responsibilities"];
 const JobDetails = () => {
   const params = useGlobalSearchParams();
   const router = useRouter();
-console.log(params);
+
   const { data, isLoading, error, refetch } = useFetch("job-details", {
     job_id: params.id,
   });
